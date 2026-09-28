@@ -6,16 +6,6 @@ Real cloud infrastructure rarely stays at two or three resources, and cloud reso
 
 To keep this lab free and account-free, we'll point Terraform at **[LocalStack](https://www.localstack.cloud/)**, a Docker container that emulates real AWS APIs on your machine. Everything you do here uses the same AWS provider and the same HCL syntax you'd use against a real AWS account — only the endpoint changes.
 
-# Instructions
-
-First, fork this repository on GitHub and then clone your fork to your local machine.
-
-```bash
-git clone git@github.com:<your-username>/lab-05-terraform.git
-```
-
-Work in the cloned repository to complete the lab exercises, then submit this repo to Gradescope.
-
 ## Setup
 
 You'll need:
