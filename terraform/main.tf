@@ -7,21 +7,11 @@ terraform {
   }
 }
 
-# Points the AWS provider at LocalStack instead of real AWS.
-# Nothing below this block ever leaves your machine.
+# No access_key/secret_key here — the AWS provider picks up credentials
+# from the environment variables or `aws configure` profile you set up
+# in the README's "AWS credentials" section.
 provider "aws" {
   region = "us-east-1"
-
-  access_key = "test"
-  secret_key = "test"
-
-  skip_credentials_validation = true
-  skip_metadata_api_check     = true
-  skip_requesting_account_id  = true
-
-  endpoints {
-    ec2 = "http://localhost:4566"
-  }
 }
 
 resource "aws_vpc" "main" {
