@@ -16,13 +16,9 @@ You'll need:
 
 ### AWS credentials
 
-If your instructor gave you AWS credentials for this course (for example, an AWS Academy or sandbox account), use those and skip to **Configure the CLI** below.
+You should have received AWS credentials for this course! Check your inbox, and let us know if you need help.
 
-Otherwise, set up your own account:
-
-1. Create an [AWS account](https://aws.amazon.com/free/) if you don't already have one.
-2. **Don't use your root account credentials for this lab.** In the AWS Console, go to **IAM → Users → Create user**, give it a name (e.g. `lab05-terraform`), and choose **Attach policies directly**. Attach `AmazonVPCFullAccess` — it covers everything this lab creates (VPCs, subnets, security groups).
-3. Open the new user, go to the **Security credentials** tab, and **Create access key**. Choose the **Command Line Interface (CLI)** use case. Save the Access Key ID and Secret Access Key shown — the secret is only ever shown once.
+This lab can be done with both the AWS CLI or the AWS Management Console. You're free to use whichever you prefer, but the instruction below guides you to use the aws cli.
 
 #### Configure the CLI
 
