@@ -1,4 +1,4 @@
-# Lab 05: Terraform
+# Lab 06: Terraform
 
 So far you've configured infrastructure by hand: `docker run` flags in Lab 01, a `docker-compose.yml` in Lab 02, `kubectl` commands in the Kubernetes lab. Each time, the pattern was the same — you describe what you want by typing commands (or filling in a manifest) and watching what happens. That works fine for a resource or two.
 
